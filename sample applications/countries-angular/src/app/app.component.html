@@ -1,0 +1,27 @@
+<div class="container">
+  <h1><img src="../assets/img/angular-logo.png" width="80"/> Angular Vacation Picker</h1>
+  <p>I want to visit:</p>
+  <input type="text"
+         (keyup.enter)="searchCountry()"
+         [(ngModel)]="countryName"
+         class="form-control-lg"
+         placeholder="country name...">
+  <button class="btn btn-primary" (click)="searchCountry()">Search</button>
+  <button class="btn btn-warning" (click)="clear()">Clear</button>
+  <hr>
+  <div class="row">
+    <div class="col-6">
+      <app-country-list
+        [countries]="countries"
+        (currentCountry)="onCurrentCountry($event)">
+      </app-country-list>
+    </div>
+    <div class="col-6">
+      <app-country-detail
+        *ngIf="currentCountry"
+        [country]="currentCountry">
+      </app-country-detail>
+    </div>
+  </div>
+
+</div>

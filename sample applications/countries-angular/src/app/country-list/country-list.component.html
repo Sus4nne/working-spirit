@@ -1,0 +1,10 @@
+<h2>Results</h2>
+<ul class="list-group">
+  <li
+    *ngFor="let country of countries"
+    (click)="setCountry(country)"
+    class="list-group-item" >
+    <img src="{{country.flag}}" alt="" width="80">
+    {{ country.name }}
+  </li>
+</ul>
