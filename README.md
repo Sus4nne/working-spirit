@@ -13,6 +13,8 @@ Working Spirit, Deventer, June 2020
 Meer vragen? Aarzel niet om nog contact op te nemen.
 Bedankt voor jullie aanwezigheid!
 
+P.S. Training Vue.js Fundamentals (live, niet virtueel): 6, 7, 8 juli: https://www.vuetraining.nl/training
+Er zijn nog enkele plaatsen beschikbaar.
 
 
 ## Book a training?
